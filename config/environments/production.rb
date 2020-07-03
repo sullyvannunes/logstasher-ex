@@ -96,11 +96,11 @@ Rails.application.configure do
   config.logstasher.enabled = true
 
   # Each of the following lines are optional. If you want to selectively disable log subscribers.
-  config.logstasher.controller_enabled = false
-  config.logstasher.mailer_enabled = false
-  config.logstasher.record_enabled = false
-  config.logstasher.view_enabled = false
-  config.logstasher.job_enabled = false
+  config.logstasher.controller_enabled = true
+  config.logstasher.mailer_enabled = true
+  config.logstasher.record_enabled = true
+  config.logstasher.view_enabled = true
+  config.logstasher.job_enabled = true
 
   # This line is optional if you do not want to suppress app logs in your <environment>.log
   config.logstasher.suppress_app_log = false
