@@ -1,0 +1,12 @@
+{
+    "cloudwatch.emitMetrics": true,
+    "flows": [
+        {
+        "filePattern": "/var/app/current/log/logstasher.log",
+        "deliveryStream": "everest-dashboard-logs-to-elasticsearch-production",
+        "maxBufferAgeMillis": "5000",
+        "maxBufferSizeBytes": "1000000",
+        "maxBufferSizeRecords": "300"
+        }
+    ]
+}
